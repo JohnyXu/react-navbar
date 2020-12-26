@@ -27,7 +27,7 @@ export default DesktopNavbar;
 const DesktopNav = styled.nav`
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   background: var(--bg);
@@ -55,7 +55,7 @@ const DesktopNav = styled.nav`
   }
 
   .logo {
-    flex: 2;
+    flex: 1;
     color: var(--text);
     font-size: 32px;
   }

@@ -39,6 +39,14 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
   }
+
+  .container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -54,7 +62,7 @@ const App = () => {
         <MenuProvider>
           <Navbar />
         </MenuProvider>
-        <ContentWrapper>
+        <ContentWrapper className="container">
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
